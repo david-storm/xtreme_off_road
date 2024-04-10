@@ -1,0 +1,79 @@
+name: StarterKit
+type: profile
+description: 'FiveJars StarterKit'
+core_version_requirement: ~10
+distribution:
+  name: StarterKit
+
+install:
+  - action
+  - addtoany
+  - admin_audit_trail
+  - admin_toolbar
+  - advagg
+  - block
+  - block_content
+  - checklistapi
+  - ckeditor_media_embed
+  - coffee
+  - config_ignore
+  - config_split
+  - content_moderation
+  - diff
+  - dropzonejs
+  - dynamic_page_cache
+  - easy_breadcrumb
+  - editor_advanced_link
+  - entity_browser
+  - entity_clone
+  - filefield_paths
+  - flood_control
+  - focal_point
+  - gin_toolbar
+  - google_tag
+  - honeypot
+  - hreflang
+  - imageapi_optimize
+  - layout_builder
+  - layout_builder_blocks
+  - layout_builder_browser
+  - layout_builder_lock
+  - layout_builder_styles
+  - layout_library
+  - masquerade
+  - media
+  - media_bulk_upload
+  - media_directories
+  - media_directories_ui
+  - media_library
+  - metatag
+  - node
+  - page_cache
+  - password_policy
+  - password_policy_characters
+  - password_policy_length
+  - pathauto
+  - redirect
+  - robotstxt
+  - scheduler
+  - schema_metatag
+  - search404
+  - seckit
+  - section_library
+  - security_review
+  - seo_checklist
+  - simple_recaptcha
+  - site_verify
+  - sitemap
+  - system
+  - ultimate_cron
+  - user
+  - views
+  - webform
+  - webform_ui
+  - workflows
+  - xmlsitemap
+  - yoast_seo
+themes:
+  - drupal8_w3css_theme
+  - gin
