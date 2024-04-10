@@ -1,17 +1,17 @@
-uuid: 08f70e9f-7e39-4a46-8cf8-805d30b1e922
+uuid: e1e03243-21c6-43df-b059-e073f53a741a
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - stark
+    - xtreme_theme
 _core:
-  default_config_hash: sG8t_FghbUscJ-GrnQ8zs_vx5YM4bJCfntrK-J5HcAY
-id: stark_branding
-theme: stark
+  default_config_hash: 3kluVX6xVfYuKg2AKx3K6lVMrllIykqTJoy7HsrOwPI
+id: xtreme_theme_branding
+theme: xtreme_theme
 region: header
-weight: 0
+weight: 1
 provider: null
 plugin: system_branding_block
 settings:
@@ -21,5 +21,5 @@ settings:
   provider: system
   use_site_logo: true
   use_site_name: true
-  use_site_slogan: true
+  use_site_slogan: false
 visibility: {  }
