@@ -1,0 +1,10 @@
+uuid: 83f933b8-0dd2-454a-bcaf-427fa8256167
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: t-3GkEEJxYw96sdR9-vJLD4AvTvKLRUGQXinmvWkSGI
+id: image_block
+label: 'Image block'
+revision: 0
+description: 'A basic block contains a title and a media.'

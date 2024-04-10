@@ -1,0 +1,11 @@
+_core:
+  default_config_hash: 7OOJLLpvkRuOtolyTZmBo_TrEtN7kkc2FxK28g-agcI
+form_ids: 'user_pass,user_register_form'
+site_key: ''
+secret_key: ''
+site_key_v3: ''
+secret_key_v3: ''
+recaptcha_type: v2
+v3_score: 80
+recaptcha_use_globally: false
+hide_badge_v3: false

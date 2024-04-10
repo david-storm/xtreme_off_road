@@ -1,0 +1,32 @@
+uuid: 3fc2fe91-3049-4679-9f98-7235dd00074b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+    - node.type.page
+  module:
+    - text
+_core:
+  default_config_hash: AWJ7rIGOHLsfd48_rVbwNxmbsTv3RuhWyV_g1CXnCpo
+id: node.page.body
+field_name: body
+entity_type: node
+bundle: page
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats:
+    - basic_html
+    - full_html
+    - plain_text
+field_type: text_with_summary

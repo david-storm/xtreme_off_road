@@ -1,0 +1,10 @@
+xtreme_theme:
+  css:
+    theme:
+      css/xtreme_theme.css: {}
+  js:
+    js/xtreme_theme.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupal.dialog.ajax

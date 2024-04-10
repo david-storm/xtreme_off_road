@@ -1,0 +1,22 @@
+uuid: 16185888-8f86-4826-a56b-09177bf80aa2
+langcode: en
+status: false
+dependencies: {  }
+_core:
+  default_config_hash: 0eCdJ3gxH-QAAsiGRkgRsx99G7j1Pe6_UgQXoEEugs8
+id: dev
+label: Dev
+description: 'Dev configuration that is used on demo, local and builds.'
+weight: 0
+stackable: false
+storage: folder
+folder: ../config/splits/dev
+module:
+  dblog: 0
+  field_ui: 0
+  update: 0
+  views_ui: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }
+no_patching: false

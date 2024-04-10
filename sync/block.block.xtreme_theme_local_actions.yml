@@ -1,0 +1,20 @@
+uuid: ac678275-4c67-418e-9bfc-8512a9a12424
+langcode: en
+status: true
+dependencies:
+  theme:
+    - xtreme_theme
+_core:
+  default_config_hash: w-d6upw9OPYM56rV28IpC2TTtjXIzNCgfXBECIjwMLI
+id: xtreme_theme_local_actions
+theme: xtreme_theme
+region: content
+weight: 1
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,45 +1,63 @@
 {
-    "name": "drupal/recommended-project",
-    "description": "Project template for Drupal projects with a relocated document root",
+    "name": "fivejars/drupal_starterkit_project",
+    "description": "Project template for FiveJars StarterKit distribution.",
     "type": "project",
     "license": "GPL-2.0-or-later",
-    "homepage": "https://www.drupal.org/project/drupal",
+    "homepage": "https://github.com/fivejars/drupal_starterkit_project",
     "support": {
-        "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
-        "chat": "https://www.drupal.org/node/314178"
+        "issues": "https://github.com/fivejars/drupal_starterkit/issues",
+        "source": "https://github.com/fivejars/drupal_starterkit"
     },
-    "repositories": [
-        {
+    "repositories": {
+        "distribution_dev": {
+            "type": "path",
+            "url": "web/profiles/custom/starterkit"
+        },
+        "0": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
-    ],
+    },
     "require": {
         "composer/installers": "^2.0",
-        "drupal/admin_toolbar": "^3.4",
+        "cweagans/composer-patches": "^1.5.0",
         "drupal/core-composer-scaffold": "^10.2",
-        "drupal/core-project-message": "^10.2",
         "drupal/core-recommended": "^10.2",
-        "drupal/ctools": "^4.0",
-        "drush/drush": "^12.5"
+        "fivejars/drupal_starterkit": "dev-master",
+        "drush/drush": "^12.4",
+        "wikimedia/composer-merge-plugin": "^2.1"
+    },
+    "require-dev": {
+        "drupal/devel": "^5.2",
+        "drupal/shield": "^1.7",
+        "drupal/stage_file_proxy": "^2.1",
+        "fivejars/drupal-quality-check": "dev-master"
     },
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
             "composer/installers": true,
+            "cweagans/composer-patches": true,
             "drupal/core-composer-scaffold": true,
-            "drupal/core-project-message": true,
             "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "phpro/grumphp-shim": true,
+            "ergebnis/composer-normalize": true,
+            "wikimedia/composer-merge-plugin": true
         },
         "sort-packages": true
     },
     "extra": {
+        "merge-plugin": {
+            "include": [
+                "web/profiles/custom/starterkit/composer.libraries.json"
+            ]
+        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
@@ -74,26 +92,6 @@
                 "type:drupal-custom-theme"
             ]
         },
-        "drupal-core-project-message": {
-            "include-keys": [
-                "homepage",
-                "support"
-            ],
-            "post-create-project-cmd-message": [
-                "<bg=blue;fg=white>                                                         </>",
-                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
-                "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
-                "<bg=blue;fg=white>                                                         </>",
-                "",
-                "<bg=yellow;fg=black>Next steps</>:",
-                "  * Install the site: https://www.drupal.org/docs/installing-drupal",
-                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
-                "  * Get support: https://www.drupal.org/support",
-                "  * Get involved with the Drupal community:",
-                "      https://www.drupal.org/getting-involved",
-                "  * Remove the plugin that prints this message:",
-                "      composer remove drupal/core-project-message"
-            ]
-        }
+        "enable-patching": true
     }
 }

@@ -1,0 +1,10 @@
+uuid: 58f0c400-daab-4a7f-9ecc-5b7109bffebf
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: VBky_afwHFGteepfdYnInezjAX1cW4CE4gXPn_sO6gA
+id: basic
+label: 'Rich-text block'
+revision: 0
+description: 'A basic block contains a title and a body.'
