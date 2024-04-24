@@ -31,6 +31,7 @@ content:
 hidden:
   addtoany: true
   created: true
+  langcode: true
   name: true
   thumbnail: true
   uid: true

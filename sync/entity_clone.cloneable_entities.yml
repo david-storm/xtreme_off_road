@@ -50,3 +50,10 @@ cloneable_entities:
   - webform_options
   - webform_submission
   - webform
+  - fillpdf_form
+  - fillpdf_file_context
+  - fillpdf_form_field
+  - pdf_style
+  - unpublished_nodes_redirect
+  - configurable_language
+  - language_content_settings

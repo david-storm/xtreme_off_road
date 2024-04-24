@@ -1,0 +1,76 @@
+label: 'Библиотека конструктора макетов'
+display:
+  default:
+    display_title: Основной
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Фильтр
+          reset_button_label: Сбросить
+          exposed_sorts_label: 'Сортировать по'
+          sort_asc_label: 'По возрастанию'
+          sort_desc_label: 'По убыванию'
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Первая'
+            last: 'Последняя »'
+          expose:
+            items_per_page_label: 'Элементов на страницу'
+            items_per_page_options_all_label: '- Все -'
+            offset_label: Пропустить
+      fields:
+        id:
+          label: ID
+          separator: ', '
+        image__target_id:
+          label: Изображение
+          separator: ', '
+        label:
+          label: Метка
+          separator: ', '
+        type:
+          label: Тип
+          separator: ', '
+        entity_id:
+          label: 'Исходное содержимое'
+          separator: ', '
+        created:
+          label: Создано
+          separator: ', '
+        changed:
+          label: Изменение
+          separator: ', '
+        user_id:
+          label: Автор
+          separator: ', '
+        operations:
+          label: 'Ссылки операций'
+      filters:
+        label:
+          expose:
+            label: Метка
+        type:
+          expose:
+            label: Тип
+          group_info:
+            label: Тип
+            group_items:
+              1:
+                title: Раздел
+              2:
+                title: Шаблон
+      title: 'Библиотека конструктора макетов'
+      empty:
+        area_text_custom:
+          content: 'Нет доступных шаблонов.'
+  page_section_library:
+    display_title: Страница
+    display_options:
+      menu:
+        title: 'Библиотека разделов'
+      tab_options:
+        title: 'Библиотека разделов'
+        description: 'Найти и управлять шаблонами библиотеки разделов'

@@ -1,0 +1,24 @@
+uuid: 565cbfd7-faae-4cb6-8776-7344a59d60eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.kvadro_services.field_price
+    - taxonomy.vocabulary.kvadro_services
+id: taxonomy_term.kvadro_services.default
+targetEntityType: taxonomy_term
+bundle: kvadro_services
+mode: default
+content:
+  field_price:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  description: true
+  langcode: true

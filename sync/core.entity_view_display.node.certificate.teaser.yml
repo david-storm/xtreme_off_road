@@ -1,0 +1,33 @@
+uuid: 916d5d48-9192-4b7a-9b77-5e7d90a33aec
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.certificate.field_count_kvadro
+    - field.field.node.certificate.field_date_expiration
+    - field.field.node.certificate.field_service
+    - node.type.certificate
+  module:
+    - user
+id: node.certificate.teaser
+targetEntityType: node
+bundle: certificate
+mode: teaser
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_count_kvadro: true
+  field_date_expiration: true
+  field_service: true
+  langcode: true

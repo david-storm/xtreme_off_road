@@ -1,0 +1,24 @@
+uuid: 374876a9-c0a3-46ba-8c1e-143f38a95ffe
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: DO5HRT6HZxx6YiWwfEqbTcnvOVgLfMScl1W6hu1MgSE
+id: certificate
+label: Certificate
+type: 'canonical_entities:node'
+pattern: 'cert/[node:title]'
+selection_criteria:
+  7c874d4c-236c-42b5-8a0e-fef9d0da5e29:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 7c874d4c-236c-42b5-8a0e-fef9d0da5e29
+    context_mapping:
+      node: node
+    bundles:
+      certificate: certificate
+selection_logic: and
+weight: -5
+relationships: {  }

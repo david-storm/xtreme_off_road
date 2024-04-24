@@ -8,6 +8,6 @@ id: image_block
 block_id: 'inline_block:image_block'
 category: basic_blocks
 label: 'Image block'
-weight: null
 image_path: ''
 image_alt: ''
+weight: null

@@ -1,0 +1,25 @@
+uuid: 753a41ac-86f3-4b5b-8da8-23486c967ae5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_count_kvadro
+    - node.type.certificate
+id: node.certificate.field_count_kvadro
+field_name: field_count_kvadro
+entity_type: node
+bundle: certificate
+label: 'Count kvadro'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  min: 1
+  max: 5
+  prefix: ''
+  suffix: ''
+field_type: integer

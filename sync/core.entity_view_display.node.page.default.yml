@@ -94,4 +94,5 @@ content:
 hidden:
   addtoany: true
   field_seo_status: true
+  langcode: true
   layout_builder__layout: true

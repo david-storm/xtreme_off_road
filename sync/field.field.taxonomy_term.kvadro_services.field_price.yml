@@ -1,0 +1,23 @@
+uuid: d84238d3-37a4-4362-9318-a0bbc415c79e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_price
+    - taxonomy.vocabulary.kvadro_services
+id: taxonomy_term.kvadro_services.field_price
+field_name: field_price
+entity_type: taxonomy_term
+bundle: kvadro_services
+label: Price
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: UAH
+field_type: integer

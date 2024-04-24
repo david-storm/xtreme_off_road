@@ -8,6 +8,6 @@ id: text_block
 block_id: 'inline_block:basic'
 category: basic_blocks
 label: 'Text Block'
-weight: null
 image_path: ''
 image_alt: ''
+weight: null
