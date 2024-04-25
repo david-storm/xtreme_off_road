@@ -5,6 +5,9 @@
   background-size: cover;
   position: absolute;
 }
+.path-frontpage #copyright {
+  display: none;
+}
 
 .path-frontpage .main .header{
   margin-top: 100px;

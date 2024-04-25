@@ -1,0 +1,5 @@
+xor_certificate.generate:
+  title: 'Generate certificates'
+  description: 'Generate certificates.'
+  route_name: xor_certificate.generate
+  parent: system.admin_content

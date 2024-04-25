@@ -3,6 +3,7 @@ xor_certificate.generate:
   defaults:
     _controller: '\Drupal\xor_certificate\Controller\GenerateCert::content'
     _title: 'AddToAny'
+    count: '20'
   requirements:
     _permission: 'administer generate certificate'
     count: '\d+'

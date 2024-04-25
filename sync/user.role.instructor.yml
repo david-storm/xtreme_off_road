@@ -1,0 +1,22 @@
+uuid: 9a212e64-260d-4def-a2fb-add4ee0d5246
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.certificate
+    - workflows.workflow.certificate
+  module:
+    - content_moderation
+    - node
+    - xor_certificate
+id: instructor
+label: Instructor
+weight: 2
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'administer activate certificate'
+  - 'edit any certificate content'
+  - 'use certificate transition activate'
+  - 'use certificate transition publish'
+  - 'view any unpublished content'

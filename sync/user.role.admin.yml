@@ -1,0 +1,24 @@
+uuid: 280d3401-1610-4100-b189-fb95d66500bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.certificate
+    - workflows.workflow.certificate
+  module:
+    - content_moderation
+    - node
+    - xor_certificate
+id: admin
+label: Admin
+weight: 3
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'administer activate certificate'
+  - 'administer generate certificate'
+  - 'edit any certificate content'
+  - 'use certificate transition activate'
+  - 'use certificate transition expired'
+  - 'use certificate transition publish'
+  - 'view any unpublished content'
