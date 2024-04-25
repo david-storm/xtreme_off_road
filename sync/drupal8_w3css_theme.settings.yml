@@ -3,12 +3,12 @@ _core:
 features:
   comment_user_picture: true
   comment_user_verification: true
-  favicon: true
+  favicon: 1
   logo: true
   name: true
   node_user_picture: true
   slogan: true
-current_theme: none
+current_theme: w3-theme-00016
 facebook_url: 'https://www.facebook.com/flashwebcenter'
 twitter_url: 'https://twitter.com/flashwebcenter'
 pinterest_url: 'https://www.pinterest.com/alaahaddad'
@@ -27,3 +27,45 @@ bottom_region: 1
 footer_region: 1
 full_opacity_onscroll: 1
 border_animation: 1
+logo:
+  use_default: 1
+favicon:
+  use_default: 1
+website_width: none
+equal_width: 0
+layout_user_login_custom: 0
+breadcrumb_page_title: 0
+d8w3css_font_awesome: null
+d8w3css_google_font_local: 0
+d8w3css_site_gf: none
+d8w3css_site_gfh: none
+d8w3css_site_gfs: none
+sitename_animation: none
+pagetitle_animation: none
+color_page_wrapper: ''
+color_header: ''
+color_primary_menu: ''
+color_welcome_text: ''
+color_highlighted: ''
+color_top_container: ''
+color_top_first: ''
+color_top_second: ''
+color_top_third: ''
+color_page_title: ''
+color_main: ''
+color_breadcrumb: ''
+color_sidebar_first: ''
+color_content: ''
+color_sidebar_second: ''
+color_bottom_container: ''
+color_bottom_first: ''
+color_bottom_second: ''
+color_bottom_third: ''
+color_bottom_forth: ''
+color_footer_container: ''
+color_footer_first: ''
+color_footer_second: ''
+color_footer_third: ''
+color_footer_menu: ''
+color_copyright: ''
+social_media_size: null

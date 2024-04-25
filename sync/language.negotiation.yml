@@ -6,10 +6,10 @@ url:
   source: path_prefix
   prefixes:
     en: en
-    uk: uk
+    uk: ''
     ru: ru
   domains:
     en: ''
     uk: ''
     ru: ''
-selected_langcode: site_default
+selected_langcode: uk

@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - system
+    - user
   theme:
     - xtreme_theme
 _core:
@@ -24,3 +25,10 @@ visibility:
     id: request_path
     negate: true
     pages: "<front>\r\n/cert/*"
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

@@ -20,25 +20,19 @@ display:
           action_title: Дія
         title:
           label: Заголовок
-          separator: ', '
         type:
           label: 'Тип матеріалу'
-          separator: ', '
         name:
           label: Автор
-          separator: ', '
         status:
           label: Стан
           settings:
             format_custom_true: Опубліковано
             format_custom_false: Неопубліковано
-          separator: ', '
         publish_on:
           label: 'Публікувати в'
-          separator: ', '
         unpublish_on:
           label: 'Зняти з публікації в'
-          separator: ', '
         operations:
           label: Операції
       filters:
@@ -76,4 +70,5 @@ display:
         uid:
           exception:
             title: Все
+      display_comment: 'Access to the user view is controlled via a custom RouteSubscriber. The high-level "view published content" permission is added to satisfy the security_review module'
     display_title: Користувач

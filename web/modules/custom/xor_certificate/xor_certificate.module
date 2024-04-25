@@ -1,0 +1,82 @@
+<?php
+
+
+/**
+ * Implements hook_entity_type_build().
+ */
+
+/**
+ * Implements hook_entity_view().
+ */
+
+use Drupal\Component\Serialization\Json;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Link;
+use Drupal\Core\Url;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function xor_certificate_node_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  if ($entity->bundle() === 'certificate' && $view_mode === 'full' && $entity->access('edit') && !$entity->isPublished()) {
+    $response = new RedirectResponse($entity->toUrl('edit-form')->toString());
+    $request = \Drupal::request();
+    // Save the session so things like messages get saved.
+    $request->getSession()->save();
+    $response->prepare($request);
+    // Make sure to trigger kernel events.
+    \Drupal::service('kernel')->terminate($request, $response);
+    $response->send();
+  }
+}
+
+/**
+ * Implements hook_entity_type_build().
+ */
+function xor_certificate_entity_type_build(array &$entity_types): void {
+  /** @var \Drupal\Core\Entity\EntityTypeInterface[] $entity_types */
+  $entity_types['node']->setFormClass('edit', 'Drupal\xor_certificate\Form\CertificateForm');
+  $entity_types['node']->setFormClass('activate', 'Drupal\xor_certificate\Form\CertificateActivateForm');
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function xor_certificate_node_presave(\Drupal\Core\Entity\EntityInterface $entity) {
+  if ($entity->bundle() === 'certificate' && $entity->isPublished() && (($entity->original && !$entity->original->isPublished()) || $entity->isNew())) {
+    $entity->set('field_date_expiration', time() + 184 * 24 * 60 * 60);
+  }
+  // todo create view cert
+  // todo style 404 page and search page
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function xor_certificate_preprocess_node__certificate__full(&$variables) {
+  $node = $variables['node'];
+  $url = Url::fromRoute('entity.node.activate', ['node' => $node->id()]);
+  if ($node->get('moderation_state')->value === 'published' && $url->access()) {
+    $link = Link::createFromRoute(t('Activate'), 'entity.node.activate', ['node' => $node->id()], [
+      'attributes' => [
+        'class' => ['use-ajax', 'w3-button'],
+        'data-dialog-type' => 'modal',
+        'data-dialog-options' => Json::encode([
+          'width' => 600,
+        ]),
+        'style' => 'background: orange;
+          padding: 10px;
+          margin-top: 20px;
+          display: block;
+          width: fit-content;
+          border-radius: 10px;'
+      ]
+    ]);
+    $variables['content']['link_activate'] = $link->toRenderable();
+    $variables['content']['link_activate']['#weight'] = 500;
+  }
+}
+
+

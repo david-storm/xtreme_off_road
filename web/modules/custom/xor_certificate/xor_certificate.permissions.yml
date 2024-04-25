@@ -1,0 +1,7 @@
+administer activate certificate:
+  title: 'Administer activate certificate'
+  restrict access: true
+
+administer generate certificate:
+  title: 'Administer generate certificate'
+  restrict access: true

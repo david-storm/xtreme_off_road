@@ -1,0 +1,16 @@
+uuid: 13c74b27-e6f8-4000-807d-310b4cd46949
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.kvadro_services
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.kvadro_services
+target_entity_type_id: taxonomy_term
+target_bundle: kvadro_services
+default_langcode: site_default
+language_alterable: false

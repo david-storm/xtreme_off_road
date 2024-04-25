@@ -45,11 +45,9 @@ settings:
 element:
   empty_message: '{Порожньо}'
   default_more_title: Ще
-  default_section_title_tag: h2
 file:
   file_private_redirect_message: 'Увійдіть, щоб отримати доступ до викладеного файлу.'
 mail:
-  default_from_name: '[site:name]'
   default_subject: 'Надсилання вебформи з: [webform_submission:source-title]'
   default_body_text: "Надіслано [webform_submission:created]\r\nНадіслав: [webform_submission:user]\r\n\r\nНадіслані значення:\r\n[webform_submission:values]\n"
 test:

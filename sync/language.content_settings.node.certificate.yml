@@ -1,0 +1,11 @@
+uuid: 7b48b12b-dd0c-40bb-a82d-046f2f3409e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.certificate
+id: node.certificate
+target_entity_type_id: node
+target_bundle: certificate
+default_langcode: zxx
+language_alterable: false

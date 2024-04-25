@@ -1,0 +1,7 @@
+name: Certificate
+type: module
+description: 'Generate and check certificate'
+package: Xtreme Off-Road
+core_version_requirement: ^10.0
+dependencies:
+  - drupal:node

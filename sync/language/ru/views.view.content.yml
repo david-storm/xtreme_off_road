@@ -11,13 +11,6 @@ display:
         type:
           label: 'Тип материала'
           separator: ', '
-        name:
-          label: Автор
-        status:
-          label: Статус
-          settings:
-            format_custom_false: 'Снято с публикации'
-            format_custom_true: Опубликовано
         changed:
           label: Обновлено
         operations:
@@ -46,19 +39,6 @@ display:
         type:
           expose:
             label: 'Тип материала'
-        status:
-          expose:
-            label: Статус
-          group_info:
-            label: 'Статус публикации'
-            group_items:
-              1:
-                title: Опубликовано
-              2:
-                title: 'Снято с публикации'
-        langcode:
-          expose:
-            label: Язык
   page_1:
     display_title: Страница
     display_options:

@@ -10,14 +10,6 @@ display:
           label: Заголовок
         type:
           label: 'Тип матеріалів'
-          separator: ', '
-        name:
-          label: Автор
-        status:
-          label: Стан
-          settings:
-            format_custom_false: Неопубліковано
-            format_custom_true: Опубліковано
         changed:
           label: Оновлено
         operations:
@@ -46,19 +38,6 @@ display:
         type:
           expose:
             label: 'Тип матеріалів'
-        status:
-          expose:
-            label: Стан
-          group_info:
-            label: 'Стан публікації'
-            group_items:
-              1:
-                title: Опубліковано
-              2:
-                title: Неопубліковано
-        langcode:
-          expose:
-            label: Мова
   page_1:
     display_title: Сторінка
     display_options:

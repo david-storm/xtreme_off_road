@@ -1,0 +1,21 @@
+xor_certificate.generate:
+  path: 'generate-cert/{count}'
+  defaults:
+    _controller: '\Drupal\xor_certificate\Controller\GenerateCert::content'
+    _title: 'AddToAny'
+  requirements:
+    _permission: 'administer generate certificate'
+    count: '\d+'
+
+entity.node.activate:
+  path: 'cert/activate/{node}'
+  defaults:
+    _entity_form: 'node.activate'
+    entity_type_id: 'node'
+  requirements:
+    _permission: 'administer activate certificate'
+    node: '\d+'
+  options:
+    parameters:
+      node:
+        type: 'entity:node'

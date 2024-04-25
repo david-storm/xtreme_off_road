@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.certificate.field_date_expiration
     - field.field.node.certificate.field_service
     - node.type.certificate
+    - workflows.workflow.certificate
   module:
     - content_moderation
     - path

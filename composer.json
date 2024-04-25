@@ -19,10 +19,12 @@
         }
     },
     "require": {
+        "chillerlan/php-qrcode": "v5.0.x-dev#f15b0afe9d4128bf734c3bf1bcffae72bf7b3e53",
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.5.0",
         "drupal/core-composer-scaffold": "^10.2",
         "drupal/core-recommended": "^10.2",
+        "drupal/fpdi_print": "^1.1",
         "fivejars/drupal_starterkit": "dev-master",
         "drush/drush": "^12.4",
         "wikimedia/composer-merge-plugin": "^2.1"

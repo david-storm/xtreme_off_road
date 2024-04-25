@@ -11,14 +11,16 @@ label: Certificate
 type: 'canonical_entities:node'
 pattern: 'cert/[node:title]'
 selection_criteria:
-  7c874d4c-236c-42b5-8a0e-fef9d0da5e29:
+  947521d7-3589-491d-ac79-1bc0ffc526d9:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 7c874d4c-236c-42b5-8a0e-fef9d0da5e29
+    uuid: 947521d7-3589-491d-ac79-1bc0ffc526d9
     context_mapping:
       node: node
     bundles:
       certificate: certificate
 selection_logic: and
 weight: -5
-relationships: {  }
+relationships:
+  'node:langcode:language':
+    label: Language

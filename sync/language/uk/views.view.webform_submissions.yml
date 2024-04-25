@@ -14,8 +14,6 @@ display:
       pager:
         options:
           tags:
-            previous: ‹‹
-            next: ››
             first: '« Перша'
             last: 'Остання »'
           expose:
@@ -23,18 +21,12 @@ display:
             items_per_page_options_all_label: '- Усе -'
             offset_label: Зміщення
       fields:
-        sid:
-          label: '#'
-          separator: ', '
         in_draft:
           label: Чернетка
-          separator: ', '
         created:
           label: Створено
-          separator: ', '
         remote_addr:
           label: IP-адреса
-          separator: ', '
         view_webform_submission:
           label: Операції
           text: переглянути
@@ -61,27 +53,18 @@ display:
         webform_submission_bulk_form:
           label: 'Вебформа: Пакетна форма операцій з надсиланнями'
           action_title: Дія
-        sid:
-          label: '#'
-          separator: ', '
         in_draft:
           label: Чернетка
-          separator: ', '
         sticky:
           label: Прикріплені
-          separator: ', '
         locked:
           label: Заблоковано
-          separator: ', '
         created:
           label: Створено
-          separator: ', '
         completed:
           label: Завершено
-          separator: ', '
         remote_addr:
           label: IP-адреса
-          separator: ', '
         operations:
           label: Операції
       filters:
@@ -102,27 +85,18 @@ display:
         webform_submission_bulk_form:
           label: 'Вебформа: Пакетна форма операцій з надсиланнями'
           action_title: Дія
-        sid:
-          label: '#'
-          separator: ', '
         in_draft:
           label: Чернетка
-          separator: ', '
         sticky:
           label: Прикріплені
-          separator: ', '
         locked:
           label: Заблоковано
-          separator: ', '
         created:
           label: Створено
-          separator: ', '
         completed:
           label: Завершено
-          separator: ', '
         remote_addr:
           label: IP-адреса
-          separator: ', '
         view_webform_submission:
           label: Операції
           text: переглянути
@@ -144,27 +118,18 @@ display:
     display_options:
       display_description: 'Огляд надсилань.'
       fields:
-        sid:
-          label: '#'
-          separator: ', '
         in_draft:
           label: Чернетка
-          separator: ', '
         sticky:
           label: Прикріплені
-          separator: ', '
         locked:
           label: Заблоковано
-          separator: ', '
         created:
           label: Створено
-          separator: ', '
         completed:
           label: Завершено
-          separator: ', '
         remote_addr:
           label: IP-адреса
-          separator: ', '
         view_webform_submission:
           label: Операції
           text: переглянути
