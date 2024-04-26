@@ -7,5 +7,5 @@ dependencies:
 id: node.certificate
 target_entity_type_id: node
 target_bundle: certificate
-default_langcode: zxx
+default_langcode: uk
 language_alterable: false

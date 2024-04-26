@@ -8,6 +8,7 @@ dependencies:
   module:
     - content_moderation
     - node
+    - toolbar
     - xor_certificate
 id: instructor
 label: Instructor
@@ -15,7 +16,9 @@ weight: 2
 is_admin: null
 permissions:
   - 'access content overview'
+  - 'access toolbar'
   - 'administer activate certificate'
+  - 'create certificate content'
   - 'edit any certificate content'
   - 'use certificate transition activate'
   - 'use certificate transition publish'

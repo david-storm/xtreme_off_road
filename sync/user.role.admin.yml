@@ -4,10 +4,14 @@ status: true
 dependencies:
   config:
     - node.type.certificate
+    - taxonomy.vocabulary.kvadro_services
     - workflows.workflow.certificate
   module:
     - content_moderation
+    - content_translation
+    - language
     - node
+    - toolbar
     - xor_certificate
 id: admin
 label: Admin
@@ -15,9 +19,19 @@ weight: 3
 is_admin: null
 permissions:
   - 'access content overview'
+  - 'access toolbar'
   - 'administer activate certificate'
+  - 'administer content translation'
   - 'administer generate certificate'
+  - 'administer languages'
+  - 'create certificate content'
+  - 'create content translations'
+  - 'delete content translations'
   - 'edit any certificate content'
+  - 'translate any entity'
+  - 'translate editable entities'
+  - 'translate kvadro_services taxonomy_term'
+  - 'update content translations'
   - 'use certificate transition activate'
   - 'use certificate transition expired'
   - 'use certificate transition publish'
