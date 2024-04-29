@@ -25,7 +25,7 @@ class GenerateCert extends ControllerBase {
 
   public function content($count = 20) {
     $service = \Drupal::service('fpdi_print.print_builder');
-    $pdf = $service->getPdf('', 38);
+    $pdf = $service->getPdf('', 3);
 
     $options = new QROptions();
     $options->outputType = QROutputInterface::IMAGICK;
