@@ -25,7 +25,7 @@ class GenerateCert extends ControllerBase {
 
   public function content($count = 20) {
     $service = \Drupal::service('fpdi_print.print_builder');
-    $pdf = $service->getPdf('', 3);
+    $pdf = $service->getPdf('', 38);
 
     $options = new QROptions();
     $options->outputType = QROutputInterface::IMAGICK;
@@ -59,7 +59,7 @@ class GenerateCert extends ControllerBase {
       if ($count - 1 != $i) {
         $templateId = $pdf->importPage(1);
         $size = $pdf->getTemplateSize($templateId);
-        $pdf->AddPage('L', array($size['w'], $size['h']));
+        $pdf->AddPage('L', array($size['width'], $size['height']));
         $pdf->useTemplate($templateId);
       }
     }
