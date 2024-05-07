@@ -1,19 +1,19 @@
-uuid: 6d570d9b-e8ec-4c87-abc8-b9898aa92db1
+uuid: 22fc4cec-89cf-409b-894c-d075899e8da4
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer
   module:
     - system
   theme:
-    - drupal8_w3css_theme
+    - drupal_starterkit_theme
 _core:
-  default_config_hash: cOGu9KiV36jPd1ypk0yl3gVFgfhEzTx6mCmzLxSJ61I
-id: drupal8_w3css_theme_footer
-theme: drupal8_w3css_theme
-region: footer_menu
-weight: 0
+  default_config_hash: d9DptoQEZUmABTGV1l5KvBxjw_XcOVr3S8-O5svNvMw
+id: drupal_starterkit_theme_footer
+theme: drupal_starterkit_theme
+region: footer
+weight: -5
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

@@ -1,17 +1,17 @@
-uuid: 3ebd4dd6-2ca8-4ea7-bb50-d3073c100a9a
+uuid: 60a392bc-5c49-4991-9bb1-24f3184a990b
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - drupal8_w3css_theme
+    - radix
 _core:
-  default_config_hash: bSh87nayw-Fh7x0auxPJoNHFokn1zFwX9KSyLpcH0Bg
-id: drupal8_w3css_theme_content
-theme: drupal8_w3css_theme
+  default_config_hash: hBHXB7hC05XU7pDYzETt-GUcpFlogK1gkjyAsg0Ym58
+id: radix_content
+theme: radix
 region: content
-weight: 3
+weight: 0
 provider: null
 plugin: system_main_block
 settings:

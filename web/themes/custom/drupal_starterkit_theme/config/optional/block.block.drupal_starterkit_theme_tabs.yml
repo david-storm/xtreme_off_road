@@ -1,14 +1,11 @@
-uuid: b93cc710-774b-4853-bfdb-4145789effdb
 langcode: en
 status: true
 dependencies:
   theme:
-    - drupal8_w3css_theme
-_core:
-  default_config_hash: 3wV-8WzENa5lVh3Ah1PrjOzkUANvgV8XaHbux7KeAdM
-id: drupal8_w3css_theme_local_tasks
-theme: drupal8_w3css_theme
-region: content
+    - drupal_starterkit_theme
+id: drupal_starterkit_theme_tabs
+theme: drupal_starterkit_theme
+region: header
 weight: 0
 provider: null
 plugin: local_tasks_block

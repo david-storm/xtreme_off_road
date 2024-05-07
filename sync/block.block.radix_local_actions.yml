@@ -1,15 +1,15 @@
-uuid: 15f3fc62-2e79-4997-8897-072785951a01
+uuid: 2c544bbe-18fe-4705-a1a0-6d5be185fc8a
 langcode: en
 status: true
 dependencies:
   theme:
-    - drupal8_w3css_theme
+    - radix
 _core:
-  default_config_hash: w-d6upw9OPYM56rV28IpC2TTtjXIzNCgfXBECIjwMLI
-id: drupal8_w3css_theme_local_actions
-theme: drupal8_w3css_theme
+  default_config_hash: OQ9aJ-4qVwK1x00o9EOYK4eFDjQr_HLpbPiJaPSVZiQ
+id: radix_local_actions
+theme: radix
 region: content
-weight: 1
+weight: -10
 provider: null
 plugin: local_actions_block
 settings:

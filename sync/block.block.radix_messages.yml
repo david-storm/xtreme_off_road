@@ -1,17 +1,17 @@
-uuid: d171730c-20e3-42cf-8f24-bdb8dbec98e4
+uuid: ad6f4d9e-9bbb-4b0d-bca2-066e3e503a25
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - drupal8_w3css_theme
+    - radix
 _core:
-  default_config_hash: IZ4yckD5ZErvQdUEXCKgME5sVt_4E5O-gHYiletWntE
-id: drupal8_w3css_theme_messages
-theme: drupal8_w3css_theme
-region: highlighted
-weight: -50
+  default_config_hash: WvPhI8OwllG0gE69-F8qL3ai3nd5SbYD6JpmEuZcyok
+id: radix_messages
+theme: radix
+region: navbar_branding
+weight: 0
 provider: null
 plugin: system_messages_block
 settings:

@@ -1,17 +1,17 @@
-uuid: 369bf3de-16d4-4d8c-9a67-32e42e106344
+uuid: 16241246-8f67-4c91-a074-478acf05a42b
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - drupal8_w3css_theme
+    - radix
 _core:
-  default_config_hash: yPe8aG4-T4XsmxadKilWNIHBBZQBkV6AqEiSoijGxT8
-id: drupal8_w3css_theme_breadcrumbs
-theme: drupal8_w3css_theme
-region: breadcrumb
-weight: -100
+  default_config_hash: y9X3xgCsO59pQyzNLzY1D3SDJJxCHILLWkpPnmuTJ2E
+id: radix_breadcrumbs
+theme: radix
+region: navbar_branding
+weight: 0
 provider: null
 plugin: system_breadcrumb_block
 settings:

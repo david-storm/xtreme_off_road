@@ -1,4 +1,4 @@
-uuid: 425c0bd3-ddd8-4e8b-86aa-4aef50ea79a7
+uuid: 73f5037a-d00e-4ace-9ead-7c207faf2d8c
 langcode: en
 status: true
 dependencies:
@@ -7,19 +7,19 @@ dependencies:
   module:
     - system
   theme:
-    - drupal8_w3css_theme
+    - drupal_starterkit_theme
 _core:
-  default_config_hash: d1YBWkT-Xltc40K8rF69EzKs_E2j6SSKsq3cXwfZCzQ
-id: drupal8_w3css_theme_main_menu
-theme: drupal8_w3css_theme
-region: primary_menu
-weight: 10
+  default_config_hash: K7Mp33ifTUdeZMrkw6zprAr3mu581y3PyIP0Mw_ziNQ
+id: drupal_starterkit_theme_main_menu
+theme: drupal_starterkit_theme
+region: navbar_left
+weight: -5
 provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
-  label: 'Main navigation'
-  label_display: '0'
+  label: Menu
+  label_display: visible
   provider: system
   level: 1
   depth: 2
