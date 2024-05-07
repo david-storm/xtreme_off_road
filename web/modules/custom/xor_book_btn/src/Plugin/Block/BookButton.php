@@ -17,7 +17,7 @@ class BookButton extends BlockBase {
   public function build() {
     return [
       '#markup' => '<a href="#" class="btn btn-primary ms-lg-5">' . $this->t('Book') . '</a>',
-      '#attributes' => ['onclick' => 'jQuery("body > .yButton")[0].click();'],
+      '#attributes' => ['onclick' => 'document.querySelector("body > .yButton").click();'],
       '#attached' => [
         'library' => ['xor_book_btn/altegio'],
       ],
