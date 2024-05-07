@@ -112,7 +112,6 @@ module:
 theme:
   claro: 0
   gin: 0
-  xtreme_theme: 0
   radix: 0
   drupal_starterkit_theme: 0
 profile: starterkit
