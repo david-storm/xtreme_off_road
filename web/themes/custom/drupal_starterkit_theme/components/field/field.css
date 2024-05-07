@@ -1,0 +1,20 @@
+.node-type--certificate .field--item {
+  padding: 24px;
+  border: solid 1px #D5D7DD;
+}
+@media (max-width: 991.98px) {
+  .node-type--certificate .field--item {
+    padding: 16px;
+  }
+}
+.node-type--certificate .field--item .field__label {
+  color: #7A7D85;
+  margin-bottom: 16px;
+}
+@media (max-width: 991.98px) {
+  .node-type--certificate .field--item .field__label {
+    margin-bottom: 8px;
+  }
+}
+
+/*# sourceMappingURL=field.css.map*/

@@ -19,6 +19,8 @@ display:
             items_per_page_options_all_label: '- Усе -'
             offset_label: Зміщення
       fields:
+        id:
+          label: ID
         image__target_id:
           label: Зображення
         label:

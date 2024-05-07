@@ -1,0 +1,18 @@
+uuid: e6e7a1f9-1962-48d2-b088-a50a5b7fc8cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.certificate
+id: node.certificate.moderation_state
+field_name: moderation_state
+entity_type: node
+bundle: certificate
+label: 'Moderation state'
+description: 'The moderation state of this piece of content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

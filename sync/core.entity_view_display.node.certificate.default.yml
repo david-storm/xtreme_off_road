@@ -32,11 +32,11 @@ content:
     type: timestamp
     label: above
     settings:
-      date_format: medium
-      custom_date_format: ''
+      date_format: custom
+      custom_date_format: d.m.Y
       timezone: ''
       tooltip:
-        date_format: long
+        date_format: ''
         custom_date_format: ''
       time_diff:
         enabled: false
@@ -44,6 +44,7 @@ content:
         past_format: '@interval ago'
         granularity: 2
         refresh: 60
+        description: ''
     third_party_settings: {  }
     weight: 103
     region: content

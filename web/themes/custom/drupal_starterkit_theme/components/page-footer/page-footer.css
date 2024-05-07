@@ -1,0 +1,10 @@
+.page__footer {
+  background-color: #EBECEF;
+  font-family: "Tektur", sans-serif;
+}
+.page__footer p {
+  font-family: inherit;
+  color: #7A7D85;
+}
+
+/*# sourceMappingURL=page-footer.css.map*/

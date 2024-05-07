@@ -1,0 +1,18 @@
+uuid: 28e71d2e-ae2c-4859-a4d6-ba6d4c79319f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.certificate
+id: node.certificate.created
+field_name: created
+entity_type: node
+bundle: certificate
+label: 'Authored on'
+description: 'The date and time that the content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

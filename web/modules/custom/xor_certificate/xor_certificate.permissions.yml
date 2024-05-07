@@ -5,3 +5,7 @@ administer activate certificate:
 administer generate certificate:
   title: 'Administer generate certificate'
   restrict access: true
+
+administer settings certificate:
+  title: 'Administer settings generate certificate'
+  restrict access: true

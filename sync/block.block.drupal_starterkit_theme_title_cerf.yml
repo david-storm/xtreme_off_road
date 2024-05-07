@@ -1,0 +1,27 @@
+uuid: 560faaeb-dab5-4d7c-982f-9d923398b6b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - drupal_starterkit_theme
+id: drupal_starterkit_theme_title_cerf
+theme: drupal_starterkit_theme
+region: header
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Title cerfificate'
+  label_display: '0'
+  provider: core
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      certificate: certificate

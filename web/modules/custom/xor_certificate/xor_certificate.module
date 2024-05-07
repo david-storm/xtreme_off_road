@@ -61,17 +61,11 @@ function xor_certificate_preprocess_node__certificate__full(&$variables) {
   if ($node->get('moderation_state')->value === 'published' && $url->access()) {
     $link = Link::createFromRoute(t('Activate'), 'entity.node.activate', ['node' => $node->id()], [
       'attributes' => [
-        'class' => ['use-ajax', 'w3-button'],
+        'class' => ['use-ajax', 'btn', 'btn-primary'],
         'data-dialog-type' => 'modal',
         'data-dialog-options' => Json::encode([
           'width' => 600,
         ]),
-        'style' => 'background: orange;
-          padding: 10px;
-          margin-top: 20px;
-          display: block;
-          width: fit-content;
-          border-radius: 10px;'
       ]
     ]);
     $variables['content']['link_activate'] = $link->toRenderable();

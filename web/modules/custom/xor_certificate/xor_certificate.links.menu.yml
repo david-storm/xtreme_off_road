@@ -3,3 +3,10 @@ xor_certificate.generate:
   description: 'Generate certificates.'
   route_name: xor_certificate.generate
   parent: system.admin_content
+
+xor_certificate.search:
+  title: 'Certificates'
+  description: 'Generate certificates.'
+  route_name: xor_certificate.search
+  parent: main
+  menu_name: main

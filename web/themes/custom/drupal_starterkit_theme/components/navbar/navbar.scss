@@ -1,0 +1,74 @@
+@import "../../src/scss/init";
+
+
+.wrapper-navbar-toggler {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
+  .navbar-toggler {
+    border: unset;
+
+    &:focus {
+      border: unset;
+      box-shadow: unset;
+    }
+  }
+}
+
+.navbar-offcanvas.offcanvas {
+  --bs-navbar-active-color: #{$accent-color};
+  background-color: $dune;
+  --bs-offcanvas-color: $white;
+
+  @include media-breakpoint-down(lg) {
+    color: $white;
+    .block {
+      padding-bottom: 16px;
+      border-bottom: $gray-500 2px solid;
+
+      &.block-xor-book-btn {
+        width: calc(100% - var(--bs-offcanvas-padding-x) * 2);
+        position: absolute;
+        bottom: 0;
+        border-bottom: unset;
+
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+    .block__title {
+      text-transform: uppercase;
+      margin-top: 24px;
+      font-size: 16px;
+      color: $gray-500;
+    }
+
+  }
+
+  .btn-close {
+    --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFF'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e")
+  }
+
+  .navbar-brand {
+    width: 170px;
+    height: 40px;
+    margin-left: calc(var(--bs-offcanvas-width) / 2 - 170px / 2);
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .offcanvas-body {
+      & > .ms-auto {
+        display: flex;
+        align-items: center;
+
+      }
+    }
+  }
+}
+

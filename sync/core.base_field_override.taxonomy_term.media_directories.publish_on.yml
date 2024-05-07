@@ -1,0 +1,18 @@
+uuid: 01a0d1ee-03b3-4beb-ac23-e4a9338a2a83
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.media_directories
+id: taxonomy_term.media_directories.publish_on
+field_name: publish_on
+entity_type: taxonomy_term
+bundle: media_directories
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

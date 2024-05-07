@@ -1,0 +1,13 @@
+.node--certificate--full .node-content {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 991.98px) {
+  .node--certificate--full .node-content {
+    gap: 16px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*# sourceMappingURL=node-cert.css.map*/

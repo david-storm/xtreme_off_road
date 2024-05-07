@@ -1,0 +1,18 @@
+uuid: 16636b10-1aa9-4a43-bf0a-cb50369522f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.certificate
+id: node.certificate.title
+field_name: title
+entity_type: node
+bundle: certificate
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

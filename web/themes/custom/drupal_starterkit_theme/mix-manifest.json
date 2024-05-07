@@ -1,0 +1,22 @@
+{
+    "/build/js/main.script.js": "/build/js/main.script.js",
+    "/build/css/main.style.css": "/build/css/main.style.css",
+    "/components/carousel/_carousel.css": "/components/carousel/_carousel.css",
+    "/components/basic_block/_basic_block.css": "/components/basic_block/_basic_block.css",
+    "/components/banner/_banner.css": "/components/banner/_banner.css",
+    "/components/alert/alert.css": "/components/alert/alert.css",
+    "/components/video/_video.css": "/components/video/_video.css",
+    "/components/page/page.css": "/components/page/page.css",
+    "/components/page-navigation/page-navigation.css": "/components/page-navigation/page-navigation.css",
+    "/components/page-footer/page-footer.css": "/components/page-footer/page-footer.css",
+    "/components/page-content/page-content.css": "/components/page-content/page-content.css",
+    "/components/offcanvas/_offcanvas.css": "/components/offcanvas/_offcanvas.css",
+    "/components/node-cert/node-cert.css": "/components/node-cert/node-cert.css",
+    "/components/navbar/navbar.css": "/components/navbar/navbar.css",
+    "/components/nav/nav.css": "/components/nav/nav.css",
+    "/components/gallery/_gallery.css": "/components/gallery/_gallery.css",
+    "/components/form/form.css": "/components/form/form.css",
+    "/components/field/field.css": "/components/field/field.css",
+    "/components/close-button/close-button.css": "/components/close-button/close-button.css",
+    "/build/assets/images/certificate.svg": "/build/assets/images/certificate.svg"
+}

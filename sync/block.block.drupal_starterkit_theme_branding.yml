@@ -1,0 +1,25 @@
+uuid: 25f3877b-d06e-4c34-a95d-a308c059ad93
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal_starterkit_theme
+_core:
+  default_config_hash: v4cNnikOGXpeuWGP_4C0h_CbJidkWTSBPlI1qiE-aPw
+id: drupal_starterkit_theme_branding
+theme: drupal_starterkit_theme
+region: navbar_branding
+weight: -5
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

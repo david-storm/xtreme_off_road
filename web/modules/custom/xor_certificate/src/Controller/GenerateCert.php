@@ -19,13 +19,35 @@ class GenerateCert extends ControllerBase {
 
   protected EntityStorageInterface $storage;
 
+  protected EntityStorageInterface $storageMedia;
+
   public function __construct() {
     $this->storage = \Drupal::entityTypeManager()->getStorage('node');
+    $this->storageMedia = \Drupal::entityTypeManager()->getStorage('media');
   }
 
-  public function content($count = 20) {
+  public function content($test) {
+    $config = $this->config('xor_certificate.settings');
     $service = \Drupal::service('fpdi_print.print_builder');
-    $pdf = $service->getPdf('', 3);
+
+    $medias = $this->storageMedia->loadByProperties(['name' => 'default_certificate']);
+    $pdfId = 0;
+    foreach ($medias as $media) {
+      $pdfId = $media->get('field_media_document')->target_id;
+      break;
+    }
+    if(!$pdfId) {
+      throw new \Exception('PDF file is missing');
+    }
+
+    $count = (int) $config->get('count');
+    $qrY = (float) $config->get('qr_y');
+    $sizeQR = (float) $config->get('size');
+    $qrX = (float) $config->get('qr_x');
+    $textY = (float) $config->get('text_y');
+    $textX = (float) $config->get('text_x');
+
+    $pdf = $service->getPdf('', $pdfId);
 
     $options = new QROptions();
     $options->outputType = QROutputInterface::IMAGICK;
@@ -36,14 +58,13 @@ class GenerateCert extends ControllerBase {
     $options->bgColor = '#ccccaa';
     $options->imageTransparent = true;
     $options->quietzoneSize = 1;
-
+    $lang = $this->languageManager()->getLanguage($this->config('language.negotiation')->get('selected_langcode'));
     for ($i = 0; $i < $count; $i++) {
 
       $string = $this->string(4, [$this, '_validCertCode']);
-      $pdf->SetFont('courier', 'B', 22);
+      $pdf->SetFont('courier', 'B', 18);
       $pdf->SetTextColor(255, 255, 255);
-//      $pdf->setAlpha(0.3);
-      $pdf->Cell(12, 12, strtoupper($string));
+      $pdf->Cell($textX, $textY, strtoupper($string));
 
       $node = $this->storage->create([
         'title' => $string,
@@ -52,14 +73,18 @@ class GenerateCert extends ControllerBase {
       $node->save();
 
       $code = new QRCode($options);
-      $fileData = $code->render($node->toUrl(NUll, ['absolute' => True])->toString());
-//      $pdf->setAlpha(1);
-      $pdf->Image('@' . $fileData, 134.5, 134, 34, 34);
+      $url = $node->toUrl(NUll, ['absolute' => True, 'language' => $lang])->toString();
+      $fileData = $code->render($url);
+      $pdf->Image('@' . $fileData, $qrX, $qrY, $sizeQR, $sizeQR);
 
+      if ($test) {
+        $node->delete();
+        break;
+      }
       if ($count - 1 != $i) {
         $templateId = $pdf->importPage(1);
         $size = $pdf->getTemplateSize($templateId);
-        $pdf->AddPage('L', array($size['width'], $size['height']));
+        $pdf->AddPage($size['orientation'], [$size['width'], $size['height']]);
         $pdf->useTemplate($templateId);
       }
     }

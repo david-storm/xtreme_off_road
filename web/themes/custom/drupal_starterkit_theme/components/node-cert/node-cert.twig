@@ -1,0 +1,63 @@
+{#
+/**
+ * @file
+ * Template for a Node.
+ */
+#}
+{%
+  set node_classes = [
+    'node',
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    node.bundle|clean_class,
+    node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+    'node--' ~ node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+    'view-mode--' ~ view_mode|clean_class,
+  ]|merge(node_utility_classes ?: [])
+%}
+{%
+  set node_content_classes = [
+    'node-content'
+]
+%}
+
+{% set node_attributes = attributes ?: create_attribute() %}
+
+<article {{ node_attributes.addClass(node_classes) }}>
+	{{ title_prefix }}
+
+	{% block node_title %}
+		{% if not page %}
+			{% include 'radix:heading' with {
+          content: label|default(''),
+          heading_html_tag: 'h2',
+          title_link: url,
+        }
+      %}
+		{% endif %}
+	{% endblock %}
+
+	{{ title_suffix }}
+
+	{% block node_metadata %}
+		{% if display_submitted %}
+			<footer>
+				{{ author_picture }}
+				<div {{ author_attributes }}>
+					{% trans %}Submitted by
+					{{ author_name }}
+					on
+					{{ date }}{% endtrans %}
+					{{ metadata }}
+				</div>
+			</footer>
+		{% endif %}
+	{% endblock %}
+
+  <div {{ content_attributes.addClass(node_content_classes) }}>
+    {% block node_content %}
+      {{ content }}
+    {% endblock %}
+  </div>
+</article>

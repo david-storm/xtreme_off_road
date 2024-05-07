@@ -1,0 +1,20 @@
+uuid: 17048b95-d1d4-41c0-a716-5059c3b1694c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupal_starterkit_theme
+_core:
+  default_config_hash: 59Jo88v9kBo5NQRbdpx2oitFZmDjGJ_ZzMeX5IIhgKQ
+id: drupal_starterkit_theme_local_actions
+theme: drupal_starterkit_theme
+region: header
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

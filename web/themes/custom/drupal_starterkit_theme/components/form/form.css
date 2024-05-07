@@ -1,0 +1,49 @@
+.path-search-cert .page-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#xor-certificate-search-form .search-block {
+  margin-bottom: 72px;
+}
+#xor-certificate-search-form .search-block > .form-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+@media (max-width: 991.98px) {
+  #xor-certificate-search-form .search-block > .form-wrapper {
+    flex-direction: column;
+  }
+}
+#xor-certificate-search-form .search-block .form-textfield, #xor-certificate-search-form .search-block .form-textfield:focus {
+  box-shadow: none;
+  border: solid 1px #D5D7DD;
+  background-image: none;
+}
+#xor-certificate-search-form .search-block input.form-submit {
+  --bs-btn-bg: #F64809;
+  --bs-btn-border-color: #F64809;
+  --bs-btn-hover-bg: #F64809;
+  --bs-btn-hover-border-color: #F64809;
+  --bs-btn-active-bg: #F64809;
+}
+#xor-certificate-search-form .search-block input {
+  border-radius: 8px;
+}
+#xor-certificate-search-form .certificate-block .certificate-text {
+  position: relative;
+  text-align: center;
+}
+#xor-certificate-search-form .certificate-block .certificate-image {
+  display: block;
+  width: 100%;
+  height: 435px;
+  background-image: url("../../src/assets/images/certificate.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
+/*# sourceMappingURL=form.css.map*/

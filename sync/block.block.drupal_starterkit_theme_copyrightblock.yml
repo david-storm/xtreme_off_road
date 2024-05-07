@@ -1,0 +1,25 @@
+uuid: 1d9295c6-4b68-4860-b2cc-f1d1041e88a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - copyright_block
+  theme:
+    - drupal_starterkit_theme
+id: drupal_starterkit_theme_copyrightblock
+theme: drupal_starterkit_theme
+region: footer
+weight: 0
+provider: null
+plugin: copyright_block
+settings:
+  id: copyright_block
+  label: 'Copyright block'
+  label_display: '0'
+  provider: copyright_block
+  start_year: '2024'
+  separator: '-'
+  text:
+    value: '<p>Copyright © [copyright_statement:dates] [site:name] - All rights reserved</p>'
+    format: basic_html
+visibility: {  }

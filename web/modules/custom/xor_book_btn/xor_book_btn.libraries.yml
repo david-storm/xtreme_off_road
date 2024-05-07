@@ -1,0 +1,7 @@
+altegio:
+  version: 1.0.0
+  css:
+    theme:
+      assets/css/main.css: {  }
+  js:
+    https://w931706.alteg.io/widgetJS: { type: external }

@@ -1,0 +1,24 @@
+body .dialog-off-canvas-main-canvas > .page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body .dialog-off-canvas-main-canvas > .page main {
+  flex: 1;
+}
+body .dialog-off-canvas-main-canvas > .page main .media.align-left {
+  margin: 0 1rem 1rem 0;
+}
+body .dialog-off-canvas-main-canvas > .page main .media.align-right {
+  margin: 0 0 1rem 1rem;
+}
+body .dialog-off-canvas-main-canvas > .page main .title-certificate + .block__content .title {
+  font-weight: 500;
+}
+body.path-frontpage main {
+  background-image: url("../../background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/*# sourceMappingURL=page.css.map*/

@@ -1,0 +1,22 @@
+uuid: 1cd86c66-4de0-4759-ae65-1f2563c9f85f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal_starterkit_theme
+_core:
+  default_config_hash: mZHJaEdHlZQ3JsdtkfNF9T5Bk19oN2OG6kX9-gljJXM
+id: drupal_starterkit_theme_content
+theme: drupal_starterkit_theme
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

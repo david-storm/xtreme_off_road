@@ -1,0 +1,22 @@
+name: drupal_starterkit_theme
+screenshot: screenshot.png
+core_version_requirement: ^10
+engine: twig
+type: theme
+base theme: radix
+dependencies:
+  - 'drupal:sdc'
+  - 'drupal:serialization'
+
+regions:
+  navbar_branding: 'Navbar branding'
+  navbar_left: 'Navbar left'
+  navbar_right: 'Navbar right'
+  header: Header
+  content: Content
+  page_bottom: 'Page bottom'
+  footer: Footer
+libraries:
+  - drupal_starterkit_theme/style
+ckeditor5-stylesheets:
+  - build/css/main.style.css

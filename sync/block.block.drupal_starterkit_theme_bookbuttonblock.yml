@@ -1,0 +1,20 @@
+uuid: 525feeea-beb5-4be3-a2dc-6645f7717b0a
+langcode: en
+status: true
+dependencies:
+  module:
+    - xor_book_btn
+  theme:
+    - drupal_starterkit_theme
+id: drupal_starterkit_theme_bookbuttonblock
+theme: drupal_starterkit_theme
+region: navbar_right
+weight: -4
+provider: null
+plugin: book_button_block
+settings:
+  id: book_button_block
+  label: 'Book button block'
+  label_display: '0'
+  provider: xor_book_btn
+visibility: {  }

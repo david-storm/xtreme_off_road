@@ -1,12 +1,11 @@
 xor_certificate.generate:
-  path: 'generate-cert/{count}'
+  path: 'admin/generate-cert/{test}'
   defaults:
     _controller: '\Drupal\xor_certificate\Controller\GenerateCert::content'
     _title: 'AddToAny'
-    count: '20'
+    test: '0'
   requirements:
     _permission: 'administer generate certificate'
-    count: '\d+'
 
 entity.node.activate:
   path: 'cert/activate/{node}'
@@ -20,3 +19,20 @@ entity.node.activate:
     parameters:
       node:
         type: 'entity:node'
+
+xor_certificate.settings:
+  path: 'admin/config/xor_certificate/settings'
+  defaults:
+    _form: 'Drupal\xor_certificate\Form\CertificateSettingsForm'
+    _title: 'Certificate generation settings'
+  requirements:
+    _permission: 'administer settings certificate'
+
+
+xor_certificate.search:
+  path: 'search-cert'
+  defaults:
+    _form: 'Drupal\xor_certificate\Form\CertificateSearchForm'
+    _title: 'Certificate search'
+  requirements:
+    _permission: 'access content'

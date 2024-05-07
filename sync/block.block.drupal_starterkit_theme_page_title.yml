@@ -1,0 +1,26 @@
+uuid: 44656be4-3ab3-43c8-8e26-85962301ceb9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal_starterkit_theme
+_core:
+  default_config_hash: qhF6akaeymmgTP6pRHpFryMiSW2pLWI7q6qe79WKIQo
+id: drupal_starterkit_theme_page_title
+theme: drupal_starterkit_theme
+region: header
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/cert/*\r\n<front>"

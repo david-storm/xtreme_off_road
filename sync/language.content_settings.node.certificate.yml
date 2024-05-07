@@ -4,8 +4,15 @@ status: true
 dependencies:
   config:
     - node.type.certificate
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '1'
 id: node.certificate
 target_entity_type_id: node
 target_bundle: certificate
-default_langcode: uk
+default_langcode: und
 language_alterable: false

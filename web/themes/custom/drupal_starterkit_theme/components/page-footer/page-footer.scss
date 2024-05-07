@@ -1,0 +1,12 @@
+@import "../../src/scss/init";
+
+.page__footer {
+  background-color: $gray-50;
+  font-family: $font-tektur;
+
+  p {
+    font-family: inherit;
+    color: $gray-500;
+  }
+}
+

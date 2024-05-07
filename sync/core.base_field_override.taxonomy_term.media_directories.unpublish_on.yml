@@ -1,0 +1,18 @@
+uuid: 85ff2609-acd0-4596-a413-6d5cc3c5b6c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.media_directories
+id: taxonomy_term.media_directories.unpublish_on
+field_name: unpublish_on
+entity_type: taxonomy_term
+bundle: media_directories
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

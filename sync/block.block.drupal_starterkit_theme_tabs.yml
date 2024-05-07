@@ -1,0 +1,22 @@
+uuid: fa5b6d2f-5f98-4dca-afdd-6a2882158ebb
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupal_starterkit_theme
+_core:
+  default_config_hash: HFcqa2p_Ha-wnU277tXZi3Ml1bevD8mvZrtUAouVjLM
+id: drupal_starterkit_theme_tabs
+theme: drupal_starterkit_theme
+region: header
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,15 @@
+@import "../../src/scss/init";
+
+
+.node--certificate--full {
+  .node-content {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include media-breakpoint-down(lg) {
+      gap: 16px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

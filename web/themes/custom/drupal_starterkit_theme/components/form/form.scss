@@ -1,0 +1,62 @@
+@import "../../src/scss/init";
+
+
+.path-search-cert {
+  .page-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+}
+
+#xor-certificate-search-form {
+  .search-block {
+    margin-bottom: 72px;
+
+    > .form-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+
+      @include media-breakpoint-down(lg) {
+        flex-direction: column;
+      }
+    }
+
+    .form-textfield, .form-textfield:focus {
+      box-shadow: none;
+      border: solid 1px $gray-100;
+      background-image: none;
+    }
+
+    input.form-submit {
+      --bs-btn-bg: #{$accent-color};
+      --bs-btn-border-color: #{$accent-color};
+      --bs-btn-hover-bg: #{$accent-color};
+      --bs-btn-hover-border-color: #{$accent-color};
+      --bs-btn-active-bg: #{$accent-color};
+    }
+
+    input {
+      border-radius: $btn-border-radius;
+    }
+  }
+
+  .certificate-block {
+    .certificate-text {
+      position: relative;
+      text-align: center;
+    }
+
+    .certificate-image {
+      display: block;
+      width: 100%;
+      height: 435px;
+      background-image: url("../../src/assets/images/certificate.svg");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: contain;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+name: Button book
+type: module
+description: 'Provide button altegio book'
+package: Xtreme Off-Road
+core_version_requirement: ^10.0
+

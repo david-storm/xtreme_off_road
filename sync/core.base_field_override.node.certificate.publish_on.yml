@@ -1,0 +1,18 @@
+uuid: 25be6a48-4fa6-44fb-872d-e34bf74d9a25
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.certificate
+id: node.certificate.publish_on
+field_name: publish_on
+entity_type: node
+bundle: certificate
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

@@ -57,3 +57,8 @@ cloneable_entities:
   - unpublished_nodes_redirect
   - configurable_language
   - language_content_settings
+  - menu_link_content
+  - search_page
+  - search_api_server
+  - search_api_index
+  - search_api_task

@@ -1,0 +1,38 @@
+@import "../../src/scss/init";
+
+body {
+  .dialog-off-canvas-main-canvas {
+    &>.page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+
+      main {
+        flex: 1;
+
+        .media {
+          &.align-left {
+            margin: 0 1rem 1rem 0;
+          }
+
+          &.align-right {
+            margin: 0 0 1rem 1rem;
+          }
+        }
+
+        .title-certificate + .block__content {
+          .title {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  &.path-frontpage {
+    main {
+      background-image: url("../../background.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
