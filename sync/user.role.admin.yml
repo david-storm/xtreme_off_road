@@ -11,6 +11,7 @@ dependencies:
     - content_translation
     - language
     - node
+    - system
     - toolbar
     - xor_certificate
 id: admin
@@ -27,6 +28,7 @@ permissions:
   - 'create certificate content'
   - 'create content translations'
   - 'delete content translations'
+  - 'delete own certificate content'
   - 'edit any certificate content'
   - 'translate any entity'
   - 'translate editable entities'
@@ -36,3 +38,4 @@ permissions:
   - 'use certificate transition expired'
   - 'use certificate transition publish'
   - 'view any unpublished content'
+  - 'view the administration theme'

@@ -1,0 +1,19 @@
+uuid: f6c06c2b-8c76-42f0-93d0-a6e8727e5aaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_time
+    - taxonomy.vocabulary.kvadro_services
+id: taxonomy_term.kvadro_services.field_time
+field_name: field_time
+entity_type: taxonomy_term
+bundle: kvadro_services
+label: Time
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

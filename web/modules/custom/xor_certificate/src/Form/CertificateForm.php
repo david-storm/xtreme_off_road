@@ -21,7 +21,6 @@ class CertificateForm extends NodeForm {
 
     if ($this->currentUser->id() !== '1') {
         $form['field_date_expiration']['widget']['#access'] = FALSE;
-        $form['advanced']['#access'] = FALSE;
     }
 
     $form['title']['#disabled'] = TRUE;

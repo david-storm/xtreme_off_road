@@ -8,6 +8,7 @@ dependencies:
   module:
     - content_moderation
     - node
+    - system
     - toolbar
     - xor_certificate
 id: instructor
@@ -19,7 +20,9 @@ permissions:
   - 'access toolbar'
   - 'administer activate certificate'
   - 'create certificate content'
+  - 'delete own certificate content'
   - 'edit any certificate content'
   - 'use certificate transition activate'
   - 'use certificate transition publish'
   - 'view any unpublished content'
+  - 'view the administration theme'

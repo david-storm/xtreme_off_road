@@ -20,7 +20,7 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
  * Implements hook_ENTITY_TYPE_view().
  */
 function xor_certificate_node_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
-  if ($entity->bundle() === 'certificate' && $view_mode === 'full' && $entity->access('edit') && !$entity->isPublished()) {
+  if ($entity->bundle() === 'certificate' && $view_mode === 'full' && $entity->access('update') && !$entity->isPublished()) {
     $response = new RedirectResponse($entity->toUrl('edit-form')->toString());
     $request = \Drupal::request();
     // Save the session so things like messages get saved.
@@ -48,8 +48,9 @@ function xor_certificate_node_presave(\Drupal\Core\Entity\EntityInterface $entit
   if ($entity->bundle() === 'certificate' && $entity->isPublished() && (($entity->original && !$entity->original->isPublished()) || $entity->isNew())) {
     $entity->set('field_date_expiration', time() + 184 * 24 * 60 * 60);
   }
-  // todo create view cert
-  // todo style 404 page and search page
+  if ($entity->bundle() === 'certificate' && $entity->get('field_time')->isEmpty()) {
+    $entity->set('field_time', $entity->get('field_service')->entity->get('field_time')->value);
+  }
 }
 
 /**
