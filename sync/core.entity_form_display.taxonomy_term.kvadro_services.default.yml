@@ -30,11 +30,10 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_time:
-    type: string_textfield
-    weight: 2
+    type: number
+    weight: 8
     region: content
     settings:
-      size: 60
       placeholder: ''
     third_party_settings: {  }
   langcode:

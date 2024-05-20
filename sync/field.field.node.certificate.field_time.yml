@@ -1,4 +1,4 @@
-uuid: fb85dc50-9871-4ccc-a0a3-a19855b2152e
+uuid: 72912aec-e0b2-4953-853f-45e3886dd9ef
 langcode: en
 status: true
 dependencies:
@@ -15,5 +15,9 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: string
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' minutes'
+field_type: integer

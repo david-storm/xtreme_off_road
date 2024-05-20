@@ -1,4 +1,4 @@
-uuid: fc397b8b-c61c-4448-b267-b59423838de1
+uuid: 470b750a-abcd-4c27-bcd2-2d82066910c9
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,10 @@ dependencies:
 id: taxonomy_term.field_time
 field_name: field_time
 entity_type: taxonomy_term
-type: string
+type: integer
 settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
+  unsigned: false
+  size: normal
 module: core
 locked: false
 cardinality: 1

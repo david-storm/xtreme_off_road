@@ -1,4 +1,4 @@
-uuid: f6c06c2b-8c76-42f0-93d0-a6e8727e5aaf
+uuid: a023563e-347a-4382-9e30-7d89b88283ba
 langcode: en
 status: true
 dependencies:
@@ -12,8 +12,12 @@ bundle: kvadro_services
 label: Time
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: string
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: minutes
+field_type: integer

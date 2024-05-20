@@ -1,4 +1,4 @@
-uuid: e8dec864-6ef5-41f2-8c55-0c3052f48887
+uuid: 7f4a745f-c371-4690-a0a4-5b1a0de0ce3f
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,10 @@ dependencies:
 id: node.field_time
 field_name: field_time
 entity_type: node
-type: string
+type: integer
 settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
+  unsigned: false
+  size: normal
 module: core
 locked: false
 cardinality: 1
