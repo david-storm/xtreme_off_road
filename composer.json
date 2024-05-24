@@ -27,7 +27,7 @@
         "drupal/core-composer-scaffold": "^10.2",
         "drupal/core-recommended": "^10.2",
         "drupal/fpdi_print": "^1.1",
-        "drupal/radix": "6.0.x-dev@dev",
+        "drupal/radix": "^6.0@beta",
         "drupal/search_api": "^1.34",
         "drush/drush": "^12.4",
         "fivejars/drupal_starterkit": "dev-master",
