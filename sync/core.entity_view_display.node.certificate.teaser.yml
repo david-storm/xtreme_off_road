@@ -6,7 +6,9 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.certificate.field_count_kvadro
     - field.field.node.certificate.field_date_expiration
+    - field.field.node.certificate.field_media
     - field.field.node.certificate.field_service
+    - field.field.node.certificate.field_text
     - field.field.node.certificate.field_time
     - node.type.certificate
   module:
@@ -30,6 +32,8 @@ hidden:
   addtoany: true
   field_count_kvadro: true
   field_date_expiration: true
+  field_media: true
   field_service: true
+  field_text: true
   field_time: true
   langcode: true

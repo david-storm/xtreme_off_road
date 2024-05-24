@@ -7,6 +7,19 @@
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
 
+
+    .field--name-field-media, .field--name-field-text {
+      grid-column-start: 1;
+      grid-column-end: 4;
+
+      img {
+        width: 100%;
+      }
+      @include media-breakpoint-down(lg) {
+        grid-column-end: 2;
+      }
+    }
+
     @include media-breakpoint-down(lg) {
       gap: 16px;
       grid-template-columns: repeat(1, 1fr);

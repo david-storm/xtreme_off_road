@@ -57,7 +57,7 @@
 
   <div {{ content_attributes.addClass(node_content_classes) }}>
     {% block node_content %}
-      {{ content }}
+      {{ content|withdout('field_media', 'field_text') }}
     {% endblock %}
   </div>
 </article>

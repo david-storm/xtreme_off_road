@@ -3,6 +3,18 @@
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
 }
+.node--certificate--full .node-content .field--name-field-media, .node--certificate--full .node-content .field--name-field-text {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.node--certificate--full .node-content .field--name-field-media img, .node--certificate--full .node-content .field--name-field-text img {
+  width: 100%;
+}
+@media (max-width: 991.98px) {
+  .node--certificate--full .node-content .field--name-field-media, .node--certificate--full .node-content .field--name-field-text {
+    grid-column-end: 2;
+  }
+}
 @media (max-width: 991.98px) {
   .node--certificate--full .node-content {
     gap: 16px;

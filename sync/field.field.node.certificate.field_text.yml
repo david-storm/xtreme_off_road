@@ -1,0 +1,24 @@
+uuid: e0f572f7-b0bf-4454-95cd-caca88f6474c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text
+    - filter.format.full_html
+    - node.type.certificate
+  module:
+    - text
+id: node.certificate.field_text
+field_name: field_text
+entity_type: node
+bundle: certificate
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long
