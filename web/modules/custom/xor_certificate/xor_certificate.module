@@ -47,8 +47,6 @@ function xor_certificate_entity_type_build(array &$entity_types): void {
 function xor_certificate_node_presave(\Drupal\Core\Entity\EntityInterface $entity) {
   if ($entity->bundle() === 'certificate' && $entity->isPublished() && (($entity->original && !$entity->original->isPublished()) || $entity->isNew())) {
     $entity->set('field_date_expiration', time() + 184 * 24 * 60 * 60);
-  }
-  if ($entity->bundle() === 'certificate' && $entity->isPublished()) {
     $entity->set('field_time', $entity->get('field_service')->entity->get('field_time')->value);
   }
 }
